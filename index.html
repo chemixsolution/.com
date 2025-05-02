@@ -193,7 +193,7 @@
       .about-image {
         flex: 1;
         height: 400px;
-        background: url("about.jpg") center/cover no-repeat;
+        background: center/cover no-repeat;
         border-radius: 10px;
       }
 
@@ -559,13 +559,7 @@
       <div class="container header-container">
         <div class="logo">
           <div class="logo-text">
-            <img
-              src="chemix.jpg"
-              alt=""
-              srcset=""
-              width="75px"
-              height="75px"
-            />
+            <img src="chemix.jpg" alt="" srcset="" width="75px" height="75px" />
             <h1>CHEMIX SOLUTION</h1>
           </div>
         </div>
@@ -625,7 +619,11 @@
               a healthy future.
             </p>
           </div>
-          <div class="about-image"></div>
+          <div class="about-image" style="        flex: 1;
+          height: 400px;
+          background:url(about.jpg) center/cover no-repeat;
+          border-radius: 10px;">
+          </div>
         </div>
       </div>
     </section>
@@ -1102,7 +1100,10 @@
           </div>
           <div class="contact-form">
             <h3>Send us a Message</h3>
-            <form method="POST" action="https://formsubmit.co/chemixsolution@gmail.com">
+            <form
+              method="POST"
+              action="https://formsubmit.co/chemixsolution@gmail.com"
+            >
               <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required />
@@ -1122,7 +1123,6 @@
               <button type="submit" class="btn">Send Message</button>
             </form>
           </div>
-          
         </div>
       </div>
     </section>
