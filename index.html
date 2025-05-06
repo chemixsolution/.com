@@ -3,9 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Chemix Solution provides eco-friendly, high-quality fertilizers to boost your farming success.">
+<meta name="keywords" content="fertilizer, agriculture, humic, amino, sulphur, Gujarat">
+
     <title>Chemix Solution - Powering Crops, Enriching Harvests</title>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-    <style>
+    <link rel="icon" type="image/png" href="chemix.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/css/lightbox.min.css" rel="stylesheet">
+    <style> 
+    html {
+  scroll-behavior: smooth;
+}
+/* Product Image Hover Effect */
+.product-img a {
+  display: block;
+  position: relative;
+}
+
+.product-img img {
+  transition: transform 0.3s ease;
+}
+
+.product-img a:hover img {
+  transform: scale(1.1);
+}
+
       :root {
         --primary-color: #2e7d32;
         --secondary-color: #4caf50;
@@ -15,9 +36,6 @@
         --text-color: #333;
         --white: #ffffff;
       }
-      body {
-  font-family: 'Nunito', sans-serif;
-}
 
       * {
         margin: 0;
@@ -559,11 +577,34 @@
       .logo-text img {
         border-radius: 50%;
       }
+      .whatsapp-float {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+}
+
+.whatsapp-float img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float img:hover {
+  transform: scale(1.1);
+}
+
       
     </style>
   </head>
   <body>
     <header>
+      </a>
+      
       <div class="container header-container">
         <div class="logo">
           <div class="logo-text">
@@ -743,18 +784,25 @@
         <div class="section-title">
           <h3>Our Products</h3>
           <p>Quality agricultural fertilizers formulated for optimal results</p>
+          <!-- 🔍 Search Bar -->
+<div style="text-align:center; margin: 40px 0;">
+  <input type="text" id="searchBox" placeholder="Search Products..." 
+         style="padding: 10px; width: 250px; font-size: 16px; border-radius: 5px; border: 1px solid #ccc;">
+</div>
+
         </div>
         <div class="products-grid">
           <div class="product-card">
             <div class="product-img">
-              <img
+              <a href="humic.jpg" data-lightbox="product-gallery" data-title="Super Potassium Humate Shiny Flakes">             <img
                 src="humic.jpg"
                 alt="Super Potassium Humate Shiny Flakes"
                 srcset=""
                 width="270px"
                 height="190px"
                 class="responsive-img"
-              />
+              /></a>
+ 
             </div>
             <div class="product-content">
               <h4>Super Potassium Humate Shiny Flakes 98%</h4>
@@ -768,6 +816,7 @@
           </div>
           <div class="product-card">
             <div class="product-img">
+              <a href="mixmicro.jpg" data-lightbox="product-gallery" data-title="Mix Micro Nutrient (Sulphated)">
               <img
                 src="mixmicro.jpg"
                 alt="Mix Micro Nutrient (Sulphated)"
@@ -776,6 +825,7 @@
                 height="180px"
                 class="responsive-img"
               />
+            </a>
             </div>
             <div class="product-content">
               <h4>Mix Micro Nutrient (Sulphated)</h4>
@@ -789,6 +839,7 @@
           </div>
           <div class="product-card">
             <div class="product-img">
+              <a href="sulphur.jpg" data-lightbox="product-gallery" data-title="Sulphur 90% Powder">
               <img
                 src="sulphur.jpg"
                 alt="Sulphur 90% Powder"
@@ -797,6 +848,7 @@
                 height="180px"
                 class="responsive-img"
               />
+            </a>
             </div>
             <div class="product-content">
               <h4>Sulphur 90% Powder</h4>
@@ -810,6 +862,7 @@
           </div>
           <div class="product-card">
             <div class="product-img">
+              <a href="shiny.jpg" data-lightbox="product-gallery" data-title="Humic Amino Shiny Balls">
               <img
                 src="shiny.jpg"
                 alt="Humic Amino Shiny Balls"
@@ -818,6 +871,7 @@
                 height="200px"
                 class="responsive-img"
               />
+            </a>
             </div>
             <div class="product-content">
               <h4>Humic Amino Shiny Balls</h4>
@@ -832,6 +886,7 @@
           </div>
           <div class="product-card">
             <div class="product-img">
+              <a href="19.jpg" data-lightbox="product-gallery" data-title="NPK 19:19:19">
               <img
                 src="19.jpg"
                 alt="NPK 19:19:19"
@@ -840,6 +895,7 @@
                 height="200px"
                 class="responsive-img"
               />
+            </a>
             </div>
             <div class="product-content">
               <h4>NPK 19:19:19</h4>
@@ -853,6 +909,7 @@
           </div>
           <div class="product-card">
             <div class="product-img">
+              <a href="52.jpg" data-lightbox="product-gallery" data-title="NPK 00:52:34">
               <img
                 src="52.jpg"
                 alt="NPK 00:52:34"
@@ -861,6 +918,7 @@
                 height="200px"
                 class="responsive-img"
               />
+            </a>
             </div>
             <div class="product-content">
               <h4>NPK 00:52:34</h4>
@@ -874,6 +932,7 @@
           </div>
           <div class="product-card">
             <div class="product-img">
+              <a href="cn.jpg" data-lightbox="product-gallery" data-title="Calcium Nitrate Granules">
               <img
                 src="cn.jpg"
                 alt="Calcium Nitrate Granules"
@@ -882,6 +941,7 @@
                 height="200px"
                 class="responsive-img"
               />
+            </a>
             </div>
             <div class="product-content">
               <h4>Calcium Nitrate Granules</h4>
@@ -896,6 +956,7 @@
           </div>
           <div class="product-card">
             <div class="product-img">
+              <a href="boron.jpg" data-lightbox="product-gallery" data-title="Disodium Octaborate Tetrahydrate (Boron 20%)">
               <img
                 src="boron.jpg"
                 alt="Disodium Octaborate Tetrahydrate (Boron 20%)"
@@ -904,6 +965,7 @@
                 height="200px"
                 class="responsive-img"
               />
+            </a>
             </div>
             <div class="product-content">
               <h4>Disodium Octaborate Tetrahydrate (Boron 20%)</h4>
@@ -917,6 +979,7 @@
           </div>
           <div class="product-card">
             <div class="product-img">
+              <a href="mg.jpg" data-lightbox="product-gallery" data-title="Magnesium Sulphate 9.6%">
               <img
                 src="mg.jpg"
                 alt="Magnesium Sulphate 9.6%"
@@ -925,6 +988,7 @@
                 height="180px"
                 class="responsive-img"
               />
+            </a>
             </div>
             <div class="product-content">
               <h4>Magnesium Sulphate 9.6%</h4>
@@ -938,6 +1002,7 @@
           </div>
           <div class="product-card">
             <div class="product-img">
+              <a href="amino.jpg" data-lightbox="product-gallery" data-title="Amino Acid 80%">
               <img
                 src="amino.jpg"
                 alt="Amino Acid 80%"
@@ -946,6 +1011,7 @@
                 height="200px"
                 class="responsive-img"
               />
+              </a>
             </div>
             <div class="product-content">
               <h4>Amino Acid 80%</h4>
@@ -960,6 +1026,7 @@
           </div>
           <div class="product-card">
             <div class="product-img">
+              <a href="zyme.jpg" data-lightbox="product-gallery" data-title="Zyme Granules">
               <img
                 src="zyme.jpg"
                 alt="Zyme Granules"
@@ -968,6 +1035,7 @@
                 height="180px"
                 class="responsive-img"
               />
+              </a>
             </div>
             <div class="product-content">
               <h4>Zyme Granules</h4>
@@ -981,6 +1049,7 @@
           </div>
           <div class="product-card">
             <div class="product-img">
+              <a href="seaweed.jpg" data-lightbox="product-gallery" data-title="Seaweed Extract Powwder">
               <img
                 src="seaweed.jpg"
                 alt="Seaweed Extract Powwder"
@@ -989,6 +1058,7 @@
                 height="180px"
                 class="responsive-img"
               />
+            </a>
             </div>
             <div class="product-content">
               <h4>Seaweed Extract Powder</h4>
@@ -1002,6 +1072,7 @@
           </div>
           <div class="product-card">
             <div class="product-img">
+              <a href="12.jpg" data-lightbox="product-gallery" data-title="NPK 12:61:00">
               <img
                 src="12.jpg"
                 alt="NPK 12:61:00"
@@ -1010,6 +1081,7 @@
                 height="200px"
                 class="responsive-img"
               />
+            </a>
             </div>
             <div class="product-content">
               <h4>NPK 12:61:00</h4>
@@ -1024,6 +1096,7 @@
           </div>
           <div class="product-card">
             <div class="product-img">
+              <a href="13.jpg" data-lightbox="product-gallery" data-title="NPK 13:40:13">
               <img
                 src="13.jpg"
                 alt="NPK 13:40:13"
@@ -1032,6 +1105,7 @@
                 height="200px"
                 class="responsive-img"
               />
+            </a>
             </div>
             <div class="product-content">
               <h4>NPK 13:40:13</h4>
@@ -1046,6 +1120,7 @@
           </div>
           <div class="product-card">
             <div class="product-img">
+              <a href="45.jpg" data-lightbox="product-gallery" data-title="NPK 13:00:45">
               <img
                 src="45.jpg"
                 alt="NPK 13:00:45"
@@ -1054,6 +1129,7 @@
                 height="200px"
                 class="responsive-img"
               />
+            </a>
             </div>
             <div class="product-content">
               <h4>NPK 13:00:45</h4>
@@ -1067,6 +1143,7 @@
           </div>
           <div class="product-card">
             <div class="product-img">
+              <a href="50.jpg" data-lightbox="product-gallery" data-title="NPK 00:00:50">
               <img
                 src="50.jpg"
                 alt="NPK 00:00:50"
@@ -1075,6 +1152,7 @@
                 height="200px"
                 class="responsive-img"
               />
+            </a>
             </div>
             <div class="product-content">
               <h4>NPK 00:00:50</h4>
@@ -1166,7 +1244,7 @@
           <p>Powering Crops, Enriching Harvests</p>
         </div>
         <div class="social-icons">
-          <a href="https://facebook.com/facebook/" target="_blank">
+          <a href="https://facebook.com/yourpage" target="_blank">
             <img
               src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
               alt="Facebook"
@@ -1175,7 +1253,7 @@
             />
           </a>
 
-          <a href="https://instagram.com/chemixsolution/" target="_blank">
+          <a href="https://instagram.com/instagram" target="_blank">
             <img
               src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
               alt="Instagram"
@@ -1184,7 +1262,7 @@
             />
           </a>
 
-          <a href="https://twitter.com/twitter" target="_blank">
+          <a href="https://twitter.com/yourpage" target="_blank">
             <img
               src="https://cdn-icons-png.flaticon.com/512/733/733579.png"
               alt="Twitter"
@@ -1193,7 +1271,7 @@
             />
           </a>
 
-          <a href="https://linkedin.com/linkedin" target="_blank">
+          <a href="https://linkedin.com/yourpage" target="_blank">
             <img
               src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
               alt="LinkedIn"
@@ -1251,5 +1329,25 @@
         });
       });
     </script>
+    <script>
+      document.getElementById("searchBox").addEventListener("keyup", function () {
+        const val = this.value.toLowerCase();
+        document.querySelectorAll(".product-card").forEach(card => {
+          card.style.display = card.innerText.toLowerCase().includes(val) ? "" : "none";
+        });
+      });
+    </script>
+    
+    <a href="https://wa.me/919624449887" class="whatsapp-float" target="_blank">
+      <img src="logo.jpg" alt="WhatsApp">
+    </a>
+    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/js/lightbox.min.js"></script>
+    <script>
+      lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true
+      });
+    </script>
+    
   </body>
 </html>
